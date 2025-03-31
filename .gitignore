@@ -14,3 +14,7 @@ log.txt
 *.dll
 *.pyc
 build/
+craft2
+.*db
+.idea
+.vscode
