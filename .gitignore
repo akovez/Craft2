@@ -18,3 +18,4 @@ craft2
 .*db
 .idea
 .vscode
+/cmake-build-debug/
