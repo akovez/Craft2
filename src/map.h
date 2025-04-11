@@ -1,5 +1,6 @@
 #ifndef _map_h_
 #define _map_h_
+#include "data.h"
 
 #define EMPTY_ENTRY(entry) ((entry)->value == 0)
 
@@ -16,24 +17,7 @@
 
 #define END_MAP_FOR_EACH }
 
-typedef union {
-    unsigned int value;
-    struct {
-        unsigned char x;
-        unsigned char y;
-        unsigned char z;
-        char w;
-    } e;
-} MapEntry;
 
-typedef struct {
-    int dx;
-    int dy;
-    int dz;
-    unsigned int mask;
-    unsigned int size;
-    MapEntry *data;
-} Map;
 
 void map_alloc(Map *map, int dx, int dy, int dz, int mask);
 void map_free(Map *map);

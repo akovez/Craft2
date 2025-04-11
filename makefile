@@ -13,3 +13,7 @@ craft2: $(FILES)
 	$(info  FILES is $(FILES))
 	$(info 	PATH is $(PATH))
 	$(CC) $(FLAGS) $(FILES)  -o craft2
+
+
+run: craft2
+	./craft2

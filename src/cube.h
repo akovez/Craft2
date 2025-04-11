@@ -1,10 +1,7 @@
 #ifndef _cube_h_
 #define _cube_h_
+#include "data.h"
 
-typedef struct {
-    unsigned int xyz;
-    unsigned int uvts;
-} VertexData;
 
 void make_cube_face_greedy(
     VertexData *data, int *indices_data, int vert_offset, float ao[4], float light[4],
